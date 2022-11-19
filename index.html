@@ -16,6 +16,9 @@
 
     <!-- COMPONENT -->
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.4/dist/flowbite.min.css" />
+
+    <!-- DATA-AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  
       
     <!-- TAILWIND CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -30,13 +33,13 @@
         },
     }; 
     </script>
-    <title>Personal web</title>
+    <title>Cobadulu</title>
 </head>
 <body>
     <!-- style="background-image: linear-gradient( 135deg, #79F1A4 10%, #0E5CAD 100%);" -->
 
     
-    <nav class="relative md:absolute w-full h-[60px]">
+    <nav class="relative md:absolute w-full h-[60px] z-10">
         <div class="fixed container flex flex-wrap items-center justify-between mx-auto bg-gray-900 px-2 sm:px-4 py-2.5">
         <a href="https://flowbite.com/" class="flex items-center">
             <img src="asset/console.png" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
@@ -69,24 +72,28 @@
 
         <div class="grid md:grid-cols-2 content-center justify-items-center md:justify-between py-20 md:py-0 px-7">
             <div class="text-center md:text-left md:self-center md:px-8 lg:px-10">
-                <h1 class="font-poppins font-bold text-white text-3xl md:text-4xl lg:text-5xl mb-5">
+                <h1 class="font-poppins font-bold text-white text-3xl md:text-4xl lg:text-5xl mb-5" data-aos="fade-up" data-aos-duration="500">
                     Hasnat Ferdiananda
                 </h1>
     
-                <p class="font-poppins font-light text-white text-sm md:text-base mb-5">
+                <p class="font-poppins font-light text-white text-sm md:text-base mb-5" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum esse eligendi aspernatur distinctio nihil repudiandae.
                 </p>
                 
-                <a href="https://www.instagram.com/" class="font-poppins bg-[#105EAD] text-white px-5 py-2 rounded-lg inline-block" target="_blank">Follow Me</a>
+                <a href="https://www.instagram.com/" class="font-poppins bg-[#105EAD] text-white px-5 py-2 rounded-lg inline-block" target="_blank" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">Follow Me</a>
             </div>
     
             
             <figure class="w-10/12 lg:w-full grid justify-center md:justify-center py-16">
-                <img src="asset/boy.png" class="h-52 md:h-64" alt="ilustrasi">
+                <img src="asset/boy.png" class="h-52 md:h-64" alt="ilustrasi" data-aos="zoom-in" data-aos-duration="1000">
             </figure>
         </div>
         
     </main>
     <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
